@@ -1,0 +1,504 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+}
+
+@media (min-width:500px) {
+    .facebook{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vw;
+        background-color: rgb(241, 241, 240);
+        min-height: 100vh;
+        
+        }
+        .facebook .header{
+            width: 100%;
+            height: 7vh ;
+            position: fixed;
+            top: 0;
+            display: flex;
+            flex-direction: row;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: white;
+        }
+        .facebook .left{
+            display: none;
+        }
+
+        .facebook .right{
+            display: none;
+        }
+
+        .facebook .header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .facebook .header .one{
+            display: flex;
+            flex-direction: row;
+            width: 50%; /*-----------*/
+            height: 100%;
+        }
+        .facebook .header .one li{
+            width: 40px;
+            height: 70%;
+            border-radius: 20px;
+            background-color: black;
+            align-self: center;
+            margin-left: 10px;
+        }
+        .facebook .header .box{
+            width: 50%; /*---------------*/
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .facebook .header .box img{
+            height: 45px;
+            border-radius: 30px;
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+        .facebook .header .box i{
+            font-size: 20px;
+        }
+        .facebook .header .two{
+            display: none;
+        }
+
+        .facebook .medium{
+            width: 100vw;
+            height: 93vh;
+            transform: translate(0,7vh);
+            overflow: auto;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .facebook .medium .bigbox{
+            width: 90%;
+            height: 80%;
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .facebook .medium .bigbox .Header{
+            height: 15%;
+            width: 95%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .facebook .medium .bigbox .Header .first{
+                height: 40%;
+                width: 80%;
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+
+
+        }
+        .facebook .medium .bigbox .Header .first img{
+            position: absolute;
+            top: 0;
+            right:  -10px;
+            border-radius: 20px;
+            height: 40px;
+        }
+        .facebook .medium .bigbox .Header .first .text1 {
+
+            display: flex;
+
+                flex-direction: column;
+                align-items: end;
+                width: 40%;
+                margin-right: 40px;
+        }
+        .facebook .medium .bigbox .Header .first .icons{
+            width: 40%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+
+        }
+.facebook .medium .bigbox .Header .first .icons i{
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+
+        .facebook .medium .bigbox .Header .last{
+            height: 40%;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            color: black;
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+
+
+
+
+
+        .facebook .medium .bigbox .img{
+            height: 70%;
+            width: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .facebook .medium .bigbox .img img{
+            height: 100%;
+        }
+/*----------------------------------*/
+
+        .facebook .medium .bigbox .footer{
+            height: 15%;
+            width: 82%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .facebook .medium .bigbox .footer .section1{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            height: 40%;
+            width:100%;
+        }
+        .facebook .medium .bigbox .footer .section1 p{
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: 900;
+            color: rgb(105, 104, 104);
+        }
+        .facebook .medium .bigbox .footer .section1 span{
+            color: gray;
+            font-weight: 900;
+        }
+        .facebook .medium .bigbox .footer .section1 .icon{
+            width:40%;
+            height: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            position: relative;
+        }
+
+        .facebook .medium .bigbox .footer .section1 .icon img{
+            height: 20px;
+        }
+        .facebook .medium .bigbox .footer .section1 .icon::before{
+            content: "157";
+            position: absolute;
+            left: 130px;
+            top: 5px;
+            font-weight: 900;
+            color: rgb(114, 115, 116);
+        }
+
+
+
+
+
+
+        .facebook .medium .bigbox .footer .section1 .text{
+            width: 40%;
+            height: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .facebook .medium .bigbox .footer .section2{
+            height: 40%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            position: relative;
+        }
+        .facebook .medium .bigbox .footer .section2 .o{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row-reverse;
+            position: relative;
+        }
+        .facebook .medium .bigbox .footer .section2::before{
+            content: "";
+            top: -10px;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+        }
+        .facebook .medium .bigbox .footer .section2 .o i{
+            margin-left: 10px;
+        }
+        
+}
+@media (min-width:900px){
+    .facebook .left{
+        display: flex;
+        width: 25vw;
+        background-color: rgb(241, 241, 241);
+        position: fixed;
+        left: 0;
+        top: 7vh;
+        height: 93vh;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .facebook .left ul{
+        width: 90%;
+        height: 100%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-top: 20px;
+        align-items: center;
+        transition: 0.5s;
+        margin-right: 10px;
+    }
+    .facebook .left ul li{
+        width: 95%;
+        height: 6%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: center;
+        margin-bottom: 5px;
+        margin-bottom: 15px;
+    }
+
+    .facebook .left ul li:not(:first-child):hover{
+        background-color: rgb(208, 210, 211);
+        transition: 0.5s;
+    }
+
+    .facebook .left ul li:first-child{
+        justify-content: space-between;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 0 10px;
+        height: 20px;
+    }
+
+    .facebook .left ul li img{
+        height: 40px;
+        border-radius: 20px;
+    }
+    .facebook .left ul li p{
+        margin-right: 10px;
+    }
+
+
+
+
+
+
+
+
+    .facebook .medium{
+        box-sizing: border-box;
+        width: 75vw;
+        height: 93vh;
+        transform: translate(25vw,7vh);
+    }
+    .facebook .header .one{
+        width: 25%;
+    }
+    .facebook .header .one{
+        width: 25%;
+    }
+    .facebook .header .box{
+
+        width: 25%;
+    }
+    .facebook .header .two{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+    }
+    .facebook .header .two i{
+        font-size: 25px;
+        margin: 0 20px;
+        color: rgb(123, 125, 126);
+    }
+}
+
+
+
+
+
+
+@media (min-width:1200px){
+    .facebook .medium{
+        width: 50vw;
+        height: 93vh;
+        transform: translate(25vw,7vh);
+    }
+    .facebook .right{
+        display: flex;
+        width: 25vw;
+        height: 93vh;
+        background-color: rgb(241, 241, 241);
+        position: fixed;
+        right: 0;
+        top: 7vh;
+        justify-content: flex-end;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .facebook .right .uu{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 40%;
+        overflow: auto;
+        align-items: flex-end;
+        transition: 0.5s;
+    }
+
+    .facebook .right .uu li{
+        width: 90%;
+        height: 10%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .facebook .right .uu li:first-child img{
+            height: 40px;
+            border-radius: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+    }
+    .facebook .right .uu li:first-child p{
+        font-size: 15px;
+    }
+
+    .facebook .right .uu li i{
+        font-size: 30px;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    /*//////////////////////////*/
+    .facebook .right .ww{
+        height: 40%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: flex-start;
+    }
+    .facebook .right .ww li{
+        width: 90%;
+        height: 15%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .facebook .right .ww li i{
+        font-size: 30px;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    .facebook .right .ww li:hover,
+    .facebook .right .uu li:hover{
+        transition: 0.5s;
+        background-color: rgb(214, 216, 218);
+    }
+
+
+
+    .facebook .right .boxx{
+        height: 20%;
+        width: 90%;
+        display: flex;
+        align-items: flex-end;
+        color: rgb(163, 161, 161);
+        justify-content: flex-end;
+        direction: rtl;
+    }
+
+    .facebook .header .two{
+        justify-content: space-evenly;
+    }
+
+    .facebook .header .two{
+        width: 40%;
+    }
+    .facebook .header .one li{
+        width: 40px;
+        height: 60%;
+    }
+
+    /*-----------------------------*/
+    .facebook .left ul{
+        width: 80%;
+    }
+    .facebook .left {
+        justify-content: flex-start;
+    }
+    .facebook .medium .bigbox{
+        width: 70%;
+    }.facebook .medium .bigbox .Header .last {
+        width: 100%;
+    }
+    .facebook .medium .bigbox .Header .first {
+        width: 100%;
+    }
+}
+
+
